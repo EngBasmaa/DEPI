@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0.1rem;
+      }
+
+      body {
+        margin: 0;
+        background: rgb(251, 171, 171);
+        padding: 0.2em;
+      }
+
+      header {
+        background: #f42808;
+        box-shadow: 10px 10px 30px 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+
+      .logo {
+        letter-spacing: 1rem;
+        font-weight: 600;
+        color: rgb(250, 250, 9);
+      }
+
+      header,
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+      }
+
+      nav {
+        margin: 0 2rem;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+      nav a:hover {
+        color: yellow;
+        text-shadow: 5px 5px 5px black;
+      }
+
+      main {
+        width: 90%;
+        height: auto;
+        margin: 6rem auto;
+        text-align: center;
+        border: none;
+        box-shadow: 10px 10px 90px 10px rgb(248, 10, 10);
+      }
+
+      .title h1 {
+        margin: 6rem auto 3rem auto;
+        letter-spacing: 0.6rem;
+        text-shadow: 2px 2px 10px red;
+      }
+
+      .title {
+        width: 80%;
+        margin: auto;
+      }
+
+      .title p {
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #ad1b05;
+      }
+
+      .name {
+      }
+
+      .title h1,
+      .container {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        border: none;
+        box-shadow: 10px 10px 40px 10px;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">LOGO</h1>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="title">
+      <h1 class="name">Product Store</h1>
+      <p>
+        It is to prioritize customer experience. This encompasses everything
+        from the ease of navigating your store, the friendliness of your staff,
+        the quality and presentation of your products, to the speed and
+        efficiency of checkout processes. A positive customer experience can
+        significantly influence repeat business and word-of-mouth referrals,
+        which are invaluable for growth.
+      </p>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="card">
+          <img />
+          <h3>product 1</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
