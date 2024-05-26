@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 2rem;
+        justify-content: center;
+        display: flex;
+      }
+      .title {
+        text-align: center;
+      }
+      .logo {
+        color: rgb(255, 238, 0);
+        letter-spacing: 1rem;
+      }
+
+      .names {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      .d-block {
+        display: block;
+      }
+
+      form {
+        border: 2px solid yellow;
+        padding: 2rem;
+        background: white;
+        width: 30%;
+        height: auto;
+      }
+
+      .ss {
+        margin: 1.5rem;
+        width: 45%;
+      }
+
+      .container {
+        margin: 1.5rem;
+      }
+
+      label {
+        margin: 0.5rem;
+      }
+
+      label.required::after {
+        content: "*";
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      button {
+        margin: 1rem;
+        background: rgb(255, 208, 0);
+        padding: 1rem;
+        border: none;
+        width: 90%;
+      }
+      input {
+        background: rgb(229, 231, 241);
+        border: none;
+        padding: 0.4rem;
+        width: 100%;
+        display: block;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      #last_name,
+      #first_name {
+        width: 100%;
+      }
+
+      input #date {
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- title -->
+
+      <div class="title">
+        <h1 class="logo">LOGO</h1>
+        <h3>Direct Deposit Enrollment</h3>
+      </div>
+      <!-- form body -->
+
+      <div class="names">
+        <div class="name-section container ss">
+          <label
+            for="first_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >First Name</label
+          >
+          <input id="first_name" type="text" name="first-name" />
+        </div>
+
+        <div class="name-section container ss">
+          <label
+            for="last_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >Last Name</label
+          >
+          <input id="last_name" type="text" name="last-name" />
+        </div>
+      </div>
+
+      <div class="email-section container">
+        <label for="email" class="d-block required" action="" method="" required
+          >Email Address</label
+        >
+        <input id="email" type="email" name="email" />
+      </div>
+
+      <div class="account-num-section container">
+        <label for="accNum" class="d-block" action="" method=""
+          >Account Number</label
+        >
+        <input id="accNum" type="number" name="account-num" />
+      </div>
+
+      <div class="routing-num-section container">
+        <label for="routNum" class="d-block" action="" method=""
+          >Routing Number</label
+        >
+        <input id="routNum" type="number" name="routing-num" />
+      </div>
+
+      <div class="date-section container">
+        <label for="date" class="d-block">Start Date</label>
+        <input id="date" type="date" name="date" />
+      </div>
+
+      <div class="btn">
+        <button type="submit">Continue to Signature</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .title {
+        text-align: center;
+      }
+      .logo {
+        color: rgb(255, 238, 0);
+        letter-spacing: 1rem;
+      }
+
+      .names {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .d-block {
+        display: block;
+      }
+
+      form {
+        border: 2px solid red;
+        padding: 2rem;
+        background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+        background-attachment: fixed;
+      }
+
+      .container {
+        margin: 1.5rem;
+      }
+
+      label {
+        margin: 0.5rem;
+      }
+
+      label.required::after {
+        content: "*";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- title -->
+
+    <div class="title">
+      <h1 class="logo">LOGO</h1>
+      <h3>Direct Deposit Enrollment</h3>
+    </div>
+
+    <!-- form -->
+
+    <form>
+      <div class="names">
+        <div class="name-section container">
+          <label
+            for="first_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >First Name</label
+          >
+          <input id="first_name" type="text" name="first-name" />
+        </div>
+
+        <div class="name-section container">
+          <label
+            for="last_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >Last Name</label
+          >
+          <input id="last_name" type="text" name="last-name" />
+        </div>
+      </div>
+
+      <div class="email-section container">
+        <label for="email" class="d-block required" action="" method="" required
+          >Email Address</label
+        >
+        <input id="email" type="email" name="email" />
+      </div>
+
+      <div class="password-section container">
+        <label for="password" class="d-block" action="" method=""
+          >Password</label
+        >
+        <input id="password" type="password" name="password" />
+      </div>
+
+      <div class="age-section container">
+        <label for="age" class="d-block" action="" method="">Age</label>
+        <input id="age" type="number" name="age" />
+      </div>
+
+      <div class="logo-section container">
+        <label for="logo" class="d-block" action="" method="">Logo</label>
+        <input id="logo" type="file" name="logo" />
+      </div>
+
+      <div class="logo-section container">
+        <label for="logo" class="d-block" action="" method="">Logo</label>
+        <input id="logo" type="file" name="logo" hidden />
+        <label for="logo">
+          <!-- without its familiar cursor of links -->
+          <a>Upload File</a>
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

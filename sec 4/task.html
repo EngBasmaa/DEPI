@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEPI Task 4</title>
+
+    <style>
+      body {
+        background-color: rgb(151, 249, 249);
+      }
+
+      h1,
+      form {
+        text-align: center;
+      }
+
+      form {
+        padding: 2rem;
+        background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+        background-attachment: fixed;
+      }
+
+      div {
+        color: rgb(251, 14, 223);
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: rgb(4, 177, 189);
+      }
+
+      form,
+      #btn {
+        font-size: 1.5rem;
+      }
+
+      #btn {
+        color: rgb(5, 118, 184);
+        background: rgb(175, 245, 242);
+        padding: 1rem;
+        border: none;
+        border-radius: 40%;
+      }
+
+      p {
+        color: rgb(4, 164, 164);
+        text-align: center;
+        font-size: 1.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Login Form</h1>
+
+    <div>
+      <form>
+        <label for="user_name">Name:</label>
+        <input
+          type="text"
+          name="user_name"
+          id="user_name"
+          placeholder="enter your name"
+        />
+        <br />
+        <br />
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="enter your age" />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="enter your password"
+        />
+        <br />
+        <br />
+        <br />
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+
+    <p class="para">Thank you from 'Basma Elmasry' for your visit ...</p>
+
+    <script src="./task.js"></script>
+  </body>
+</html>
