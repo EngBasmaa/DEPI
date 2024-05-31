@@ -25,18 +25,25 @@
         left: 0;
         right: 0;
         top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 3.5rem;
       }
 
       .logo {
         letter-spacing: 1rem;
         font-weight: 600;
         color: rgb(250, 250, 9);
+        position: fixed;
+        left: 0.5rem;
       }
 
       header,
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 3rem;
         list-style: none;
       }
 
@@ -50,21 +57,12 @@
         list-style: none;
         color: black;
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: 2rem;
       }
 
       nav a:hover {
         color: yellow;
         text-shadow: 5px 5px 5px black;
-      }
-
-      main {
-        width: 90%;
-        height: auto;
-        margin: 6rem auto;
-        text-align: center;
-        border: none;
-        box-shadow: 10px 10px 90px 10px rgb(248, 10, 10);
       }
 
       .title h1 {
@@ -81,22 +79,81 @@
       .title p {
         justify-content: center;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.6em;
         font-weight: 600;
         color: #ad1b05;
       }
 
-      .name {
+      main {
+        width: 90%;
+        height: auto;
+        margin: 6rem auto;
+        text-align: center;
+        border: none;
+        box-shadow: 10px 10px 90px 10px rgb(248, 10, 10);
+
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 3rem;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distributes items evenly across the row */
       }
 
+      .title h1 {
+        width: 70%;
+        padding: 1rem;
+        font-size: 3rem;
+      }
       .title h1,
-      .container {
-        width: 90%;
+      .card {
         height: auto;
         text-align: center;
         border: none;
         box-shadow: 10px 10px 40px 10px;
-        padding: 0.5rem;
+      }
+
+      .card {
+        box-shadow: none;
+        border: 3px solid red;
+        margin: auto;
+        margin: 2rem auto;
+        width: 20rem;
+        height: 45rem;
+        border-radius: 2rem;
+        flex: 1;
+        padding: 1rem;
+      }
+
+      .card img {
+        overflow: auto;
+        border-radius: 2rem;
+        margin: auto;
+        aspect-ratio: 1/1;
+        width: 20rem;
+      }
+
+      .card h3 {
+        font-size: 2rem;
+        margin: 1.3rem auto;
+      }
+
+      .card small {
+        font-size: 1.1rem;
+      }
+
+      button {
+        margin: 2rem;
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+        color: #f42808;
+        font-weight: 800;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 50px 5px rgb(248, 10, 10);
+        background: #f7d3ce;
+        border: none;
       }
     </style>
   </head>
@@ -106,14 +163,14 @@
 
       <nav class="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="title">
+    <div id="home" class="title">
       <h1 class="name">Product Store</h1>
       <p>
         It is to prioritize customer experience. This encompasses everything
@@ -126,9 +183,16 @@
     </div>
 
     <main>
-      <div class="container">
-        <div class="card">
-          <img />
+      <!-- card 1 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./img 1.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
           <h3>product 1</h3>
           <small
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
@@ -137,6 +201,112 @@
             Corrupti enim repellat explicabo veritatis.</small
           >
         </div>
+        <button type="submit">Buy Now</button>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./img 2.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <h3>product 2</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+        <button type="submit">Buy Now</button>
+      </div>
+
+      <!-- card 3 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./pic 3.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <h3>product 3</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+        <button type="submit">Buy Now</button>
+      </div>
+
+      <!-- card 4 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./pic 4.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <h3>product 4</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+        <button type="submit">Buy Now</button>
+      </div>
+
+      <!-- card 5 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./pic 5.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <h3>product 5</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+        <button type="submit">Buy Now</button>
+      </div>
+
+      <!-- card 6 -->
+      <div class="card">
+        <div class="container">
+          <img
+            src="./pic 6.jpg"
+            alt="product"
+            width="100%"
+            height="auto"
+            loading="lazy"
+          />
+          <h3>product 6</h3>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro amet vel architecto ipsum, reprehenderit quaerat ipsam eaque
+            id asperiores, assumenda recusandae voluptates hic veritatis!
+            Corrupti enim repellat explicabo veritatis.</small
+          >
+        </div>
+        <button type="submit">Buy Now</button>
       </div>
     </main>
   </body>
