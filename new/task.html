@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    table {
+      border: 2px solid green;
+      width: 100%;
+      border-spacing: 0;
+    }
+    th {
+      border: 2px solid red;
+    }
+
+    td {
+      border: 2px solid orange;
+    }
+
+    .noData {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <form>
+      <div class="names">
+        <div class="name-section container ss">
+          <label
+            for="first_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >First Name</label
+          >
+          <input id="first_name" type="text" name="first-name" />
+        </div>
+
+        <div class="name-section container ss">
+          <label
+            for="last_name"
+            class="d-block required"
+            action=""
+            method=""
+            required
+            >Last Name</label
+          >
+          <input id="last_name" type="text" name="last-name" />
+        </div>
+      </div>
+
+      <div class="email-section container">
+        <label for="email" class="d-block required" action="" method="" required
+          >Email Address</label
+        >
+        <input id="email" type="email" name="email" />
+      </div>
+    </form>
+    <hr />
+    <table>
+      <!-- th, tb, tf tags ...      -->
+      <!-- 
+     <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr></tr>
+     </thead>
+     <tbody></tbody>
+     <tfoot></tfoot>
+     -->
+      <thead>
+        <tr>
+          <th>first name</th>
+          <th>last name</th>
+          <th>name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">basma</td>
+          <td>elmasry</td>
+          <td>basma@gmail.com</td>
+        </tr>
+        <tr>
+          <td>elmasry</td>
+          <td>basma@gmail.com</td>
+        </tr>
+        <tr id="noData">
+          <td colspan="3"><div class="noData">no data found</div></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <button onclick="add()" type="submit">Add</button>
+  </body>
+
+  <script>
+    let first = document.getElementById("first_name");
+    let last = document.getElementById("last_name");
+    let email = document.getElementById("email");
+    let noData = document.getElementById("noData");
+
+    let table = document.querySelector("tbody");
+
+    function add() {
+      //check .. then create
+      if (first.value && last.value && email.value) {
+        // create
+        let row = document.createElement("tr");
+        table.appendChild(row);
+
+        row.innerHTML = `
+            <td>${first.value}</td>
+            <td>${last.value}</td>
+            <td>${email.value}</td>
+`;
+
+        first.value = "";
+        last.value = "";
+        email.value = "";
+      } else {
+        this.alert("all values should be entered please");
+      }
+    }
+  </script>
+</html>

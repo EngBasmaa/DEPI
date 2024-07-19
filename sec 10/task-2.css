@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+}
+.nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav {
+  margin: 0.3rem;
+}
+
+ul {
+  gap: 2rem;
+  list-style: none;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+li:hover {
+  color: rgb(255, 132, 0);
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo p {
+  color: black;
+}
+.container {
+  background-image: url(./pic\ 3.jpg);
+  position: center;
+  height: 100vh;
+
+  color: white;
+  padding: 5rem;
+}
+
+.parent {
+  width: 60%;
+  height: 70vh;
+  border: 4px dotted white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.5rem;
+  /* padding-top: 3rem; */
+}
+
+h1,
+h2,
+button,
+p {
+  margin: 1rem;
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  line-height: 2rem;
+  color: rgb(254, 252, 252);
+  font-weight: 600;
+}
+
+button {
+  padding: 1rem 2.5rem;
+  background: rgb(255, 132, 0);
+  border-radius: 1rem;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  h1,
+  h2,
+  p {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  p {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  h1,
+  h2,
+  p {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  h1,
+  h2,
+  p {
+    font-size: 30%;
+  }
+}

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(28, 80, 148);
+  padding: 0;
+}
+.nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.top {
+  height: 30rem;
+  width: 100%;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  background: rgb(76, 126, 190);
+}
+
+nav {
+  padding: 1rem;
+}
+
+ul {
+  gap: 2rem;
+  list-style: none;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+li:hover {
+  color: rgb(169, 167, 167);
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo p {
+  color: black;
+}
+.container {
+  height: 100;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  height: 15rem;
+  padding: 2rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.child {
+  width: 30%;
+  height: 48rem;
+  border: 4px solid white;
+  display: flex;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+
+.child img {
+  width: 90%;
+  height: 25rem;
+  border-radius: 1rem;
+}
+
+.child h2 {
+  color: rgb(23, 67, 125);
+  font-size: 2rem;
+}
+
+.child p {
+  all: unset;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+h1,
+h2,
+button,
+p {
+  margin: 1rem;
+  font-size: 2em;
+  color: rgb(23, 67, 125);
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  line-height: 2rem;
+  color: rgb(254, 252, 252);
+  font-weight: 600;
+}
+
+button {
+  padding: 1rem 2.5rem;
+  background: rgb(255, 72, 0);
+  border-radius: 3rem;
+  border: none;
+  background: rgb(169, 167, 167);
+}
+
+@media (max-width: 992px) {
+  h1,
+  h2,
+  p {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2,
+  p {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  h1,
+  h2,
+  p {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  h1,
+  h2,
+  p {
+    font-size: 50%;
+  }
+}
