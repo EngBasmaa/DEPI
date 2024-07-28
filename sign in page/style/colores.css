@@ -1,0 +1,27 @@
+.text-main-color{
+    color: var(--text-main-color);
+}
+.bg-main-color{
+    color: var(--bg-main-color);
+}
+
+.text-secondary-color{
+    color: var(--text-secondary-color);
+}
+.bg-secondary-color{
+    color: var(--bg-secondary-color);
+}
+
+.text-white-color{
+    color: var(--text-white-color);
+}
+.bg-white-color{
+    color: var(--bg-white-color);
+}
+
+.text-dark-color{
+    color: var(--text-dark-color);
+}
+.bg-dark-color{
+    color: var(--bg-dark-color);
+}

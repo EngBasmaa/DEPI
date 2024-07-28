@@ -1,0 +1,23 @@
+:root{
+    --text-main-color:#4A249D;
+    --bg-main-color:#4A249D;
+
+    --text-secondary-color:#009FBD;
+    --bg-secondary-color:#009FBD;
+
+    --text-white-color:#fff;
+    --bg-white-color:#fff;
+
+    --text-dark-color:#111;
+    --bg-dark-color:#111;
+
+    --input-color:#111;
+    --bg-input-color:#fafafa;
+    --placeholder-color:#777;
+    --input-border-color:#d4d4d4;
+    --input-border-radius:8px;
+    --input-height:3rem;
+    --input-padding:1rem;
+
+    --btn-border-radius:8px;
+}
